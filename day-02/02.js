@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/571edea4b625edcb51000d8e/train/javascript
+
 var a1 = "A",
   a2 = "a",
   b1 = "B",
