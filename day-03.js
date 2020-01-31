@@ -1,16 +1,7 @@
 //https://www.codewars.com/kata/571f832f07363d295d001ba8/train/javascript
 function trueOrFalse(val) {
-  if (val > 1) return false;
-  // else if (val === ) return true;
-  //   else if ( a === b )    return false;
-  //   else if ( a < b ) return true;
-  //   else if ( !a == b ) return true;
-  //   else if ( b > c ) return true;
-  //   else if ( b === c ) return false;
-  //   else if ( b < c ) return false;
-  //   else if ( !b == c ) return true;
-  //   else if ( a === c ) return true;
-  //   else if ( !a == c ) return false;
+  if (val == false || val == undefined || val == null) return "false";
+  else return "true";
 }
 
 //https://www.codewars.com/kata/572059afc2f4612825000d8a/train/javascript
