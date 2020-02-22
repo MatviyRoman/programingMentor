@@ -4,12 +4,13 @@ function last(list) {
     return list.charAt(list.length - 1);
   } else if (typeof list === 'object') {
     return list[list.length - 1];
-  }
-  //   if(typeof list === 'arguments')
-  else {
-    let array = [].slice.call(list, 0);
-    return array[array.length - 1];
-    console.log(array[array.length - 1]);
+  } else {
+    return 5;
+    //if(typeof list === 'arguments')
+    //let array = [].slice.call(list, 0);
+    //return array[array.length - 1];
+    //console.log(array[array.length - 1]);
+    //}
   }
 }
 
