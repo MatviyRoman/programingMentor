@@ -5,9 +5,21 @@ const myObj = {
 };
 
 //https://www.codewars.com/kata/558cb3df5f511f40d500001d/train/javascript
+// function nouveau(Constructor) {
+//   let user = new Constructor('Guy');
+//   console.log(user);
+//   return user;
+// }
+
 function nouveau(Constructor) {
-  // Don't forget, unnamed arguments after Constructor may be passed in!
-  let user = new Constructor('Guy');
-  console.log(user);
-  return user;
+  let args = Array.call(this, ...arguments).slice(1);
+  instance = Object.create(Constructor.prototype);
+  if (
+    (Constructor.apply(instance, args) !== null &&
+      typeof Constructor.apply(instance, args) === 'object') ||
+    (typeof Constructor.apply(instance, args) === 'function' &&
+      Constructor.apply(instance, args))
+  )
+    return Constructor.apply(instance, args);
+  else return instance;
 }
