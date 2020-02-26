@@ -29,10 +29,18 @@ obj2.test;
 console.log(obj2.test);
 
 //https://www.codewars.com/kata/53844152aa6fc137d8000589/train/javascript
-function always(n) {
-  return test(n);
-}
+// function always(n) {
+//   return test(n);
+// }
 
-function test(n) {
-  return n;
-}
+// function test(n) {
+//   return n;
+// }
+
+let always = function() {
+  return true;
+};
+
+console.log(always()); //return true
+
+always();
