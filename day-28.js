@@ -37,10 +37,24 @@ console.log(obj2.test);
 //   return n;
 // }
 
-let always = function() {
-  return true;
-};
+// let always = function() {
+//   return true;
+// };
 
-console.log(always()); //return true
+// console.log(always()); //return true
 
-always();
+// always();
+
+// let always = function () {
+//   return true;
+// };
+
+// console.log(always());
+
+// always();
+
+function always(n) {
+  return function() {
+    return n;
+  };
+}
