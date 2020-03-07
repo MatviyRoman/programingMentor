@@ -1,6 +1,6 @@
 // https://www.codewars.com/kata/587593285448632b8d000143
 function submitOrder(user) {
-  var shoppingCart, zipCode, shippingRate, orderSuccessful;
+  const shoppingCart, zipCode, shippingRate, orderSuccessful;
 
   // Get the current user's shopping cart
   OrderAPI.getShoppingCartAsync(user).then(function(cart) {
